@@ -1,0 +1,48 @@
+@use "../../partials/variables" as *;
+@use "../../partials/mixins" as *;
+
+.session-page {
+  background-color: rgb(245, 234, 234);
+  border: 20px solid lightseagreen;
+  padding: 1rem;
+
+  &__profile-wrapper {
+    display: flex;
+    padding: 1rem;
+    background-color: white;
+    max-width: 800px;
+    margin: 0rem auto;
+    border: 10px solid aqua;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 160px;
+    @include tablet {
+      top: 120px;
+    }
+  }
+
+  &__picture {
+    width: 60px;
+    padding-right: 1rem;
+    color: #061625;
+    @include tablet {
+      width: 100px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__text-appear {
+    font-size: 0.5rem;
+    @include tablet {
+      font-size: 1.5rem;
+    }
+  }
+  &__chatbox {
+    @include tablet {
+      position: relative;
+      top: -15vh;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@use "../../partials/variables" as *;
+@use "../../partials/mixins" as *;
+
+.emergency {
+  &__table {
+    @include desktop {
+      margin: 0 auto;
+    }
+  }
+  &__column {
+    padding: 1rem;
+    font-size: 1rem;
+    @include tablet {
+      font-size: 1.5rem;
+    }
+  }
+  &__column-hospitals {
+    display: flex;
+    justify-content: flex-start;
+  }
+  &__column-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  &__hospital {
+    color: $black-text;
+    font-weight: 400;
+    font-size: 1rem;
+    @include tablet {
+      font-size: 1.5rem;
+    }
+  }
+  &__hospital:hover {
+    background-color: $light-salmon;
+  }
+  &__data {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-right: 1.2rem;
+    @include tablet {
+      font-size: 1.5rem;
+    }
+  }
+  &__data-hospital {
+    padding: 1rem;
+  }
+}

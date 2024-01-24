@@ -1,0 +1,38 @@
+@use "../../partials/variables" as *;
+@use "../../partials/mixins" as *;
+
+.alarm-page {
+  background-color: beige;
+  border: 20px solid lightseagreen;
+  padding: 1rem;
+  height: 100vh;
+
+  &__alarm-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    flex-wrap: nowrap;
+  }
+  &__profile-wrapper {
+    display: flex;
+    padding: 1rem;
+    background-color: white;
+    max-width: 800px;
+    margin: 0rem auto;
+    border: 10px solid lightgreen;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 160px;
+    @include tablet {
+      top: 120px;
+    }
+  }
+  &__picture {
+    width: 60px;
+    padding-right: 1rem;
+    color: #061625;
+    @include tablet {
+      width: 100px;
+    }
+  }
+}

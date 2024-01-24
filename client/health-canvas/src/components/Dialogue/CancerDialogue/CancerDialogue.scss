@@ -1,0 +1,79 @@
+@use "../../../partials/mixins" as *;
+
+.cancer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    margin: 1rem;
+    font-size: 1.2rem;
+    @include tablet {
+      font-size: 1.5rem;
+    }
+  }
+  // &__row {
+  //   // display: flex;
+  //   // gap: 5rem;
+  // }
+  // &__column {
+  // }
+  &__data {
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  &__nb {
+    padding: 1rem;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  &__dictionary {
+    color: cyan;
+    &:hover {
+      .cancer__dictionary__definition {
+        display: flex;
+        color: black;
+        background-color: white;
+        border: 10px solid darkseagreen;
+        position: absolute;
+        top: -15rem;
+        width: 20rem;
+        padding: 1rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
+  &__dictionary__definition {
+    display: none;
+  }
+  &__button-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  &__button {
+    padding: 1rem 2rem;
+    margin: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: rgb(132, 166, 20);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: #2980b9;
+    }
+  }
+  &__start-over {
+    background-color: rgb(221, 190, 18);
+  }
+  &__score {
+    font-size: 1.8rem;
+  }
+}

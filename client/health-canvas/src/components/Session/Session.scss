@@ -1,0 +1,25 @@
+.session {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid teal;
+  &__text-area {
+    display: flex;
+    flex: 1;
+    height: 100px;
+  }
+  &__button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: #2980b9;
+    }
+  }
+}
